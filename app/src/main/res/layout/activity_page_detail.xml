@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:src="@drawable/back"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="รายละเอียดสินค้า"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="#fff">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/junk"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Junkrat"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HP: 200"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:text="  Junkrat คือไอ้วิปริตที่หมกมุ่นอยู่กับระเบิด และชีวิตของเขาคงอยู่เพื่อสร้างความวุ่นวายแกมทำลายล้างให้กับโลกทั้งใบเท่านั้น การโจมตี Fusion Core ของเหล่า Omnium ณ ประเทศออสเตรเลียได้เปลี่ยนพื้นผิวและสภาวะแวดล้อมของพื้นที่แถบนั้นรวมถึงพื้นที่ใกล้เคียงไปตลอดกาล โดยภายหลังการระเบิดครั้งใหญ่มันมีสภาพสุดเลวร้ายยากต่อการอยู่อาศัย เต็มไปด้วยสารกัมมันตภาพรังสี และเศษซากของอารยธรรมของเมืองมนุษย์ซึ่งเคยคงอยู่เมื่อกาลก่อน บัดนี้แทบจะไร้ซึ่งชีวิตใดๆ ทนอยู่ได้"/>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Buy" />
+
+</LinearLayout>
